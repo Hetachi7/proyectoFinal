@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css_index/Econtacto.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/bootstrap.min.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css_index/Econtacto.css')); ?>">
 </head>
 <body>
     <header>
@@ -18,13 +18,13 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav" style="font-weight: 600px; padding-right: 20px; font-size: 20px;">
                         <a class="navbar-brand" href="#">
-                            <img src="{{asset('local_storage/img/logo.png')}}" alt="Logo" width="100px" height="100px" class="d-inline-block align-text-top">
-                            <a class="nav-link" href="{{route('inicio')}}" style="color: aliceblue; margin-right: 60rem;">MAGICA COLOMBIA</a>
+                            <img src="<?php echo e(asset('local_storage/img/logo.png')); ?>" alt="Logo" width="100px" height="100px" class="d-inline-block align-text-top">
+                            <a class="nav-link" href="<?php echo e(route('inicio')); ?>" style="color: aliceblue; margin-right: 60rem;">MAGICA COLOMBIA</a>
                             </a>
                           </a>
-                      <a class="nav-link active" style="color: aliceblue;margin-right:1rem" aria-current="page" href="{{route('subirhistoria')}}">Sube tu Historia</a>
-                      <a class="nav-link" href="{{route('info')}}" style="color: aliceblue ;margin-right:1rem;">Quienes somos</a>
-                      <a class="nav-link " aria-disabled="page" href="{{route('registro')}}" style="color: aliceblue; margin-right:1rem">Registrate</a>
+                      <a class="nav-link active" style="color: aliceblue;margin-right:1rem" aria-current="page" href="<?php echo e(route('subirhistoria')); ?>">Sube tu Historia</a>
+                      <a class="nav-link" href="<?php echo e(route('info')); ?>" style="color: aliceblue ;margin-right:1rem;">Quienes somos</a>
+                      <a class="nav-link " aria-disabled="page" href="<?php echo e(route('registro')); ?>" style="color: aliceblue; margin-right:1rem">Registrate</a>
                     </div>
                   </div>
                 </div>
@@ -100,4 +100,4 @@
     </div>
        
 </body>
-</html>
+</html><?php /**PATH C:\xampp\htdocs\proyectoFinal\resources\views/Contacto.blade.php ENDPATH**/ ?>

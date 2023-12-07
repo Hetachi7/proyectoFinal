@@ -33,7 +33,7 @@
         </div>
     <div class="container">
         <div class="row" style="text-align: center;">  
-            <form  action="<?php echo e(route('guardarDatos')); ?>" method="POST" enctype="multipart/form-data">
+            <form  action="" method="POST" enctype="multipart/form-data">
     
             <label  style="color: aliceblue ; font-size: 30px; " 
             for="opciones"  >Seleciona el error</label>

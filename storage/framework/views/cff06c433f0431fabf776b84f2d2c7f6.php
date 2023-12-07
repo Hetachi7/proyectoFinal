@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css_index/Eformulario.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/bootstrap.min.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('css_index/Eformulario.css')); ?>">
     
 </head>
 <body>
@@ -21,14 +21,14 @@
                       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav" style="font-weight: 600px; padding-right: 20px; font-size: 20px;">
                             <a class="navbar-brand" href="#">
-                                <img src="{{asset('local_storage/img/logo.png')}}" alt="Logo" width="100px" height="100px" class="d-inline-block align-text-top">
-                                <a class="nav-link" href="{{route('inicio')}}" style="color: aliceblue; margin-right: 60rem;">MAGICA COLOMBIA</a>
+                                <img src="<?php echo e(asset('local_storage/img/logo.png')); ?>" alt="Logo" width="100px" height="100px" class="d-inline-block align-text-top">
+                                <a class="nav-link" href="<?php echo e(route('inicio')); ?>" style="color: aliceblue; margin-right: 60rem;">MAGICA COLOMBIA</a>
                                 </a>
                               </a>
-                          <a class="nav-link active" style="color: aliceblue; margin-right:1rem;" aria-current="page" href="{{route('subirhistoria')}}">Sube tu Historia</a>
-                          <a class="nav-link" href="{{route('info')}}" style="color: aliceblue; margin-right:1rem;">Quienes somos</a>
-                          <a class="nav-link" href="{{route('contac')}}" style="color: aliceblue;margin-right:1rem;">Contacto</a>
-                          <a class="nav-link " aria-disabled="page" href="{{route('registro')}}" style="color: aliceblue;margin-right:1rem;">Registrate</a>
+                          <a class="nav-link active" style="color: aliceblue; margin-right:1rem;" aria-current="page" href="<?php echo e(route('subirhistoria')); ?>">Sube tu Historia</a>
+                          <a class="nav-link" href="<?php echo e(route('info')); ?>" style="color: aliceblue; margin-right:1rem;">Quienes somos</a>
+                          <a class="nav-link" href="<?php echo e(route('contac')); ?>" style="color: aliceblue;margin-right:1rem;">Contacto</a>
+                          <a class="nav-link " aria-disabled="page" href="<?php echo e(route('registro')); ?>" style="color: aliceblue;margin-right:1rem;">Registrate</a>
                         </div>
                       </div>
                     </div>
@@ -41,7 +41,7 @@
         </div>
        <div class="container">
         <div class="row">
-            <img src="{{asset('local_storage/img/subirhistoria.png')}}"  height="300px" style="  margin-left: auto; margin-right: auto; align-items: center;">
+            <img src="<?php echo e(asset('local_storage/img/subirhistoria.png')); ?>"  height="300px" style="  margin-left: auto; margin-right: auto; align-items: center;">
             <div class="col-sm-12 col-md-6 col-lg-6" style=" margin-top: 20%;
             height: 100%;
             width: 50%;  
@@ -117,12 +117,12 @@
                     
             </div>
            
-            <form id="formularioHistoria" action="{{ route('crearHistoria') }}" method="POST" enctype="multipart/form-data">
-                @csrf
+            <form id="formularioHistoria" action="<?php echo e(route('crearHistoria')); ?>" method="POST" enctype="multipart/form-data">
+                <?php echo csrf_field(); ?>
                 <div class="col-sm-12 col-md-6 col-lg-6" style="text-align: center;">
                     <h1 style="color: aliceblue;">Escribe tu historia</h1>
                     <br>
-                    <div class="jumbotron bg-image" style="background-image: url({{ asset('local_storage/img/hoja.png') }})">
+                    <div class="jumbotron bg-image" style="background-image: url(<?php echo e(asset('local_storage/img/hoja.png')); ?>)">
                         <div class="opacity-25" style="height: 5rem">
                             <br>
                             <br>
@@ -164,4 +164,4 @@
     
     
 </body>
-</html>
+</html><?php /**PATH C:\xampp\htdocs\proyectoFinal\resources\views/formularioHistoria.blade.php ENDPATH**/ ?>
